@@ -1,8 +1,8 @@
 :root {
-	--clr-base: #000;
-	--clr-att: #f00;
+	--clr-base: #1B1919;
+	--clr-att: #DF1F2B;
 
-	--min: 320px;
+	--min: 360px;
 	--max: 1200px;
 
 	font-size: 10px;
@@ -19,9 +19,12 @@
 body {
 	color: var(--clr-base, #000);
 	background: #fff;
+    font-size: 14px;
+    line-height: 18/14;
 }
 p, ul, ol {
 	position: relative;
+    margin-bottom: 18/14em;
 	img {
 		max-width: 100%;
 	}
@@ -35,10 +38,10 @@ li {
 }
 a {
 	text-decoration: none;
-	color: var(--clr-att, #f00);
+	color: var(--clr-att, #DF1F2B);
 	&:hover {
 		text-decoration: none;
-		color: var(--clr-att, #f00);
+		color: var(--clr-att, #DF1F2B);
 	}
 }
 a.link-main, .link-main {
@@ -48,6 +51,7 @@ a.link-main, .link-main {
 		border-bottom: none;
 	}
 }
+.page-title,
 h1, .h1-title,
 h2, .h2-title,
 h3, .h3-title,
@@ -58,5 +62,46 @@ h6, .h6-title {
 	position: relative;
     &:first-child {
         margin-top: 0;
+    }
+}
+.page-title {
+    font-size: 24px;
+    line-height: 29/24;
+    font-weight: bold;
+    letter-spacing: 15px;
+    margin-bottom: 30px;
+    padding-top: 60px;
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--clr-att);
+    }
+}
+.text-att, .title-att {
+    color: var(--clr-att);
+}
+.text-light, .title-light {
+    color: #ADADAD;
+}
+@media (max-width: 1023px) {
+    .page-title {
+        &.title-small {
+            letter-spacing: 10px;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .page-title {
+        font-size: 40px;
+        line-height: 45/40;
+        padding-left: 80px;
+        padding-top: 0;
+        margin-bottom: 50px;
     }
 }

@@ -1,27 +1,241 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="number"],
-input[type="range"],
-input[type="search"],
-input[type="tel"],
-input[type="url"] {
-	
+.form-input {
+    height: 44px;
+    border: 1px solid var(--clr-base);
+    background-color: transparent;
+    padding: 0 10px 0 22px;
+    font-size: 16px;
+    font-weight: 400;
+    &.inp-light {
+        color: #fff;
+        border-color: #fff;
+    }
+    &.inp-second {
+        height: 50px;
+        border: 1px solid #E5E5E5;
+        padding: 0 10px 0 15px;
+        color: var(--clr-base);
+        &[placeholder]::-webkit-input-placeholder {color: #A6A6A6;}
+        &[placeholder]:-moz-placeholder {color: #A6A6A6;}
+        &[placeholder]::-moz-placeholder {color: #A6A6A6;}
+        &[placeholder]:-ms-input-placeholder {color: #A6A6A6;}
+    }
 }
-textarea {
-	height: 100px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	resize: none;
+select {
+	display: block;
+    cursor: pointer;
+	width: 100%;
+	padding-right: 50px;
+	background-image: url(../img/icons/arrow-select.svg);
+	background-position: right 10px center;
+    background-size: 16px auto;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	appearance: none!important;
+	line-height: 1em;
+	text-indent: 0.01px; 
+	text-overflow: '';
+	outline: none;
+    &.form-input {
+        padding-right: 50px;
+        &.inp-light {
+            background-image: url(../img/icons/arrow-select-light.svg);
+        }
+    }
+}
+select::-ms-expand {
+	display: none;
 }
 .btn,
 button,
 input[type="submit"] {
-	
+    height: 42px;
+    padding: 0 20px;
+    border: 1px solid var(--clr-att);
+    background: var(--clr-att);
+    font-size: 16px;
+    line-height: 1.3;
+    color: #fff;
+    min-width: 160px;
+    &:hover {
+        background: #DF1F2B+#222;
+        border-color: #DF1F2B+#222;
+        color: #fff;
+    }
+    &.fancybox-button {
+        min-width: 0;
+    }
+    &.button-more {
+        padding: 0 12px;
+        &:after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            position: relative;
+            margin: 2px 0 0 10px;
+            background: url(../img/icons/arrow-more.svg) center no-repeat;
+            background-size: 5px auto;
+        }
+    }
+    &.button-light {
+        border-color: #fff;
+        background: #fff;
+        color: #282828;
+        &:hover {
+            background: #fafafa;
+            border-color: #fafafa;
+            color: var(--clr-base);
+        }
+    }
+    &.button-border {
+        height: 52px;
+        background: #fff;
+        border: 1px solid #EDEDED;
+        color: var(--clr-base);
+        &:hover {
+            border-color: var(--clr-base);
+            background: var(--clr-base);
+            color: #fff;
+        }
+    }
+}
+.btn-action-ico {
+	min-width: 0;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 40px;height: 40px;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	transition: all ease 0.2s;
+	flex-shrink: 0;
+    &:not(.btn) {
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+    &.btn {
+        min-width: 0;
+        min-height: 0;
+        padding: 0;
+        display: block;
+    }
+	&:before, &:after, [class*="icon-"], img {
+		display: block;
+		position: absolute;
+		top: 0;bottom: 0;left: 0;right: 0;
+		margin: auto;
+		max-width: 100%;
+		max-height: 100%;
+		transition: all ease 0.2s;
+	}
+	&:before, &:after {
+		content: "";
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto auto;
+	}
+	&:hover {
+		text-decoration: none;
+		&:not(.btn) {
+            background: none;
+            box-shadow: none;
+        }
+	}
+    &.ico-play {
+        width: 69px;
+        height: 69px;
+        &:before {
+            background-image: url(../img/icons/play.svg);
+            background-size: 100% auto;
+        }
+    }
+    &.ico-menu {
+        &:after, &:before {
+            transition: transform ease 0.2s;
+        }
+        &:before {
+            background-image: url(../img/icons/menu.svg);
+            background-size: 20px auto;
+        }
+        &.active {
+            &:after, &:before {
+                width: 20px;
+                height: 2px;
+                border-radius: 1px;
+                background: var(--clr-att);
+                top: 50%;
+                left: 50%;
+                right: auto;
+                bottom: auto;
+                margin: -1px 0 0 -10px;
+                .t-rotate(45deg);
+            }
+            &:before {
+                .t-rotate(-45deg);
+            }
+        }
+    }
+    &.ico-arrow, &.ico-arrow-main {
+        z-index: 20;
+        cursor: pointer;
+        &.slick-disabled {
+            pointer-events: none;
+            opacity: 0;
+        }
+    }
+    &.ico-arrow {
+        width: 30px;
+        height: 30px;
+        &:before {
+            background-image: url(../img/icons/arrow-slider.svg);
+            background-size: 100% auto;
+        }
+        &.slick-disabled, &.button-disabled {
+            pointer-events: none;
+            &:before {
+                filter: brightness(0) grayscale(1);
+            }
+        }
+    }
+    &.ico-arrow-main {
+        width: 102px;
+        height: 102px;
+        background: fade(#221F20, 20);
+        mix-blend-mode: normal;
+        border: 1px solid #ECEFF4;
+        &:before {
+            background-size: 37px auto;
+            background-image: url(../img/icons/arrow-slider-main.svg);
+        }
+        &:hover {
+            background: fade(#221F20, 40);
+            border: 1px solid #ECEFF4;
+        }
+    }
+    &.ico-arrow-prev {
+        &:before {
+            .t-rotate(180deg);
+        }
+    }
+    &.button-soc {
+        width: 30px;
+        height: 30px;
+        img, svg {
+            height: 20px;
+        }
+    }
 }
 .frm-row,
 .frm-field,
@@ -30,6 +244,10 @@ input[type="submit"] {
     flex-wrap: wrap;
 	position: relative;
 	line-height: 1;
+}
+.frm-field {
+    display: block;
+    width: 100%;
 }
 .frm-select {
 	position: relative;
@@ -44,15 +262,108 @@ input[type="submit"] {
 		opacity: 0;
 		margin: 0;
 		padding: 0;
+        &:checked {
+            &~label {
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
 	}
 	label {
-		display: block;
+        display: flex;
 		position: relative;
 		cursor: pointer;
+        font-size: 14px;
+        line-height: 21px;
+        min-height: 26px;
+        align-items: center;
+        padding: 0 0 0 50px;
         &:before, &:after {
             content: "";
             display: block;
             position: absolute;
+            width: 26px;
+            height: 26px;
+            top: 0;
+            left: 0;
+        }
+        &:before {
+            border: 1px solid #292D32;
+            border-radius: 5px;
+        }
+        &:after {
+            background: url(../img/icons/check.svg) center no-repeat;
+            background-size: 100% auto;
+            opacity: 0;
         }
 	}
+}
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    line-height: 1;
+    text-align: center;
+    font-size: 0;
+    margin: 0;
+    li {
+        margin: 0 7px;
+        padding: 0;
+        display: block;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &:before {
+            display: none;
+        }
+        button {
+            background: none;
+            border: 2px solid #fff;
+            min-width: 0;
+            padding: 0;
+            box-shadow: none;
+            font-size: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            &:hover, &.active {
+                background: #fff;
+            }
+        }
+    }
+    .slick-active {
+        button {
+            background: #fff;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .btn,
+    button,
+    input[type="submit"] {
+        &.button-more {
+            height: 62px;
+            &:before {
+                right: 26px;
+            }
+        }
+    }
+    .form-input {
+        &.inp-second {
+            height: 50px;
+            padding-left: 23px;
+        }
+    }
+    .frm-select {
+        label {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
 }
