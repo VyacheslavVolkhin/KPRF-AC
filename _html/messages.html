@@ -6,8 +6,71 @@
 		<!-- wrap -->
 		<div class="wrap">
 			
-			<!-- build:section header -->
-			<!-- /build -->
+			<!-- header -->
+			<header class="header">
+				<div class="inner-wrap">
+					<div class="logo-wrap">
+						<a href="" class="logo">
+							<img src="./img/main/logo.svg" alt="">
+						</a>
+					</div>
+					<div class="support-wrap">
+						<div class="sp-title">Поддерживают нас: </div>
+						<div class="sp-logo">
+							<img src="./img/icons/support.svg" alt="">
+						</div>
+						<div class="sp-total">10 000 чел.</div>
+					</div>
+					<div class="main-menu-wrap menu-wrap js-popup-wrap">
+						<a href="" class="btn-action-ico ico-menu js-btn-toggle"></a>
+						<div class="menu-content-block js-popup-block">
+							<div class="menu-wrap">
+								<ul class="menu">
+									<li><a href="main.html">Главная</a></li>
+									<li><a href="messages.html" class="active">Вопросы и ответы</a></li>
+									<li><a href="smi.html">Новости</a></li>
+									<li><a href="blog.html">Мой блог</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
+									<li><a href="new.html">Новость</a></li>
+								</ul>
+							</div>
+							<div class="soc-wrap">
+								<div class="soc-buttons">
+									<a href="" class="btn-action-ico button-soc">
+										<img src="./img/icons/soc-viber.svg" alt="">
+									</a>
+									<a href="" class="btn-action-ico button-soc">
+										<img src="./img/icons/soc-tg.svg" alt="">
+									</a>
+									<a href="" class="btn-action-ico button-soc">
+										<img src="./img/icons/soc-wa.svg" alt="">
+									</a>
+									<a href="" class="btn-action-ico button-soc">
+										<img src="./img/icons/soc-email.svg" alt="">
+									</a>
+								</div>
+								<div class="soc-buttons">
+									<a href="" class="btn-action-ico button-soc">
+										<img src="./img/icons/soc-fb.svg" alt="">
+									</a>
+									<a href="" class="btn-action-ico button-soc">
+										<img src="./img/icons/soc-tw.svg" alt="">
+									</a>
+									<a href="" class="btn-action-ico button-soc">
+										<img src="./img/icons/soc-inst.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="action-wrap">
+						<a href="" data-src="#popup-message" class="btn" data-fancybox="">
+							<span class="button-title">Оставить обращение</span>
+						</a>
+					</div>
+				</div>
+			</header>
+			<!-- /header -->
 			
 			<!--main-top-box-->
 			<div class="main-top-box cnt-section">
@@ -23,6 +86,9 @@
 					<div class="title-outer-wrap">
 						<div class="title-wrap">
 							<h1 class="page-title">Обращения и&nbsp;ответы</h1>
+						</div>
+						<div class="action-wrap">
+							<a href="#form" class="btn button-border button-border-att js-anchor-button">Написать вопрос</a>
 						</div>
 					</div>
 				</div>
@@ -247,6 +313,35 @@
 					</div>
 				</div>
 				<!--/faq-box-->
+				
+				<!--form-box-->
+				<div class="form-box" id="form">
+					<div class="frm-row">
+						<div class="frm-field field-half">
+							<input type="text" class="form-input" placeholder="Имя">
+						</div>
+						<div class="frm-field field-half">
+							<input type="email" class="form-input" placeholder="Email">
+						</div>
+					</div>
+					<div class="frm-row">
+						<div class="frm-field">
+							<div class="frm-field-file js-field-file">
+								<input type="file">
+								<a href="" class="btn button-file js-file-button" data-title="Прикрепить файл">Прикрепить файл</a>
+							</div>
+						</div>
+					</div>
+					<div class="frm-row">
+						<div class="frm-field">
+							<textarea placeholder="Вопрос" class="form-input"></textarea>
+						</div>
+					</div>
+					<div class="frm-row-submit">
+						<button type="submit" class="btn">Отправить</button>
+					</div>
+				</div>
+				<!--/form-box-->
 			
 			</div>
 			<!-- /page -->

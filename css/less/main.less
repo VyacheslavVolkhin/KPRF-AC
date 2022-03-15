@@ -35,6 +35,23 @@ p, ul, ol {
 
 li {
 	position: relative;
+    padding-left: 16px;
+    margin-bottom: 0.5em;
+    &:last-child {
+        margin: 0;
+    }
+    &:before {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--clr-att);
+        position: absolute;
+        top: 9/14em;
+        left: 0;
+        margin-top: -3px;
+    }
 }
 a {
 	text-decoration: none;
@@ -88,6 +105,10 @@ h6, .h6-title {
 }
 .text-light, .title-light {
     color: #ADADAD;
+}
+.text-lead {
+    font-size: 1.3em;
+    font-weight: bold;
 }
 @media (max-width: 1023px) {
     .page-title {

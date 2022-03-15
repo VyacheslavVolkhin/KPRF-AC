@@ -19,7 +19,6 @@
     <!-- wrap -->
     <div class="wrap wrap-main">
 
-
         <!-- header -->
         <header class="header">
             <div class="inner-wrap">
@@ -40,11 +39,12 @@
                     <div class="menu-content-block js-popup-block">
                         <div class="menu-wrap">
                             <ul class="menu">
-                                <li><a href="">Главная</a></li>
-                                <li><a href="">Вопросы и ответы</a></li>
-                                <li><a href="">Новости</a></li>
-                                <li><a href="">Мой блог</a></li>
-                                <li><a href="">Контакты</a></li>
+                                <li><a href="main.html" class="active">Главная</a></li>
+                                <li><a href="messages.html">Вопросы и ответы</a></li>
+                                <li><a href="smi.html">Новости</a></li>
+                                <li><a href="blog.html">Мой блог</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                                <li><a href="new.html">Новость</a></li>
                             </ul>
                         </div>
                         <div class="soc-wrap">
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="action-wrap">
-                    <a href="" class="btn">
+                    <a href="" data-src="#popup-message" class="btn" data-fancybox="">
                         <span class="button-title">Оставить обращение</span>
                     </a>
                 </div>
@@ -146,9 +146,9 @@
                     <!--/sl-wrap-->
                 </div>
             </div>
-            <div class="actions-outer-wrap">
+            <div class="actions-outer-wrap js-tabs-nav">
                 <div class="action-wrap">
-                    <a href="" class="btn">
+                    <a href="" class="btn" data-tab="tab-blog">
                         <span class="button-ico">
                             <img src="./img/icons/serp.svg" alt="">
                         </span>
@@ -156,7 +156,7 @@
                     </a>
                 </div>
                 <div class="action-wrap">
-                    <a href="" class="btn button-light">
+                    <a href="" class="btn button-light active" data-tab="tab-about">
                         <span class="button-ico">
                             <img src="./img/icons/star.svg" alt="">
                         </span>
@@ -180,315 +180,358 @@
         <div class="page">
 
             <!--about-box-->
-            <div class="about-box">
-                <div class="slider-wrap slider-actions">
-                    <div class="slider">
-                        <!--sl-wrap-->
-                        <div class="sl-wrap">
-                            <div class="photo-wrap">
-                                <img src="./img/photo.jpg" alt="" class="img-about">
-                                <div class="photo-title">
-                                    <img src="./img/icons/title.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="info-wrap">
-                                <div class="info-title-wrap">
-                                    <h2 class="page-title title-light">Обо мне</h2>
-                                </div>
-                                <div class="info-text-wrap">
-                                    <div class="sl-title">Андрей Черепенников</div>
-                                    <p>
-                                        Житель г.о. Серпухов Первый секретарь партии КПРФ г.Протвино. <br>
-                                        День рождения: 26 июня 1968 г. Город: Серпухов, Семейное положение: женат. Место работы: Государственная Дума РФ
-                                    </p>
-                                    <p>
-                                        <b>Родной город: Серпухов</b><br>
-                                        Место работы: Помошник первого секретаря КПРФ Московской области Васильева Н.В., а также помошник Депутата ГД РФ Кашина В.Н.(Зам.Зюганова Г.А.)
-                                    </p>
-                                    <p>
-                                        <b>Жизненная позиция</b><br>
-                                        Полит. предпочтения: Коммунистические <br>
-                                        Главное в жизни: Совершенствование мира <br>
-                                        Главное в людях: Доброта и честность
-                                    </p>
-                                </div>
+            <div class="js-tab-block" data-tab="tab-about">
+                <div class="about-box">
+                    <div class="photo-outer-wrap">
+                        <div class="photo-wrap">
+                            <img src="./img/photo.jpg" alt="" class="img-about">
+                            <div class="photo-title">
+                                <img src="./img/icons/title.svg" alt="">
                             </div>
                         </div>
-                        <!--/sl-wrap-->
-                        <!--sl-wrap-->
-                        <div class="sl-wrap">
-                            <div class="photo-wrap">
-                                <img src="./img/photo.jpg" alt="" class="img-about">
-                                <div class="photo-title">
-                                    <img src="./img/icons/title.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="info-wrap">
-                                <div class="info-title-wrap">
-                                    <h2 class="page-title title-light">Обо мне</h2>
-                                </div>
-                                <div class="info-text-wrap">
-                                    <div class="sl-title">Андрей Черепенников</div>
-                                    <p>
-                                        Житель г.о. Серпухов Первый секретарь партии КПРФ г.Протвино. <br>
-                                        День рождения: 26 июня 1968 г. Город: Серпухов, Семейное положение: женат. Место работы: Государственная Дума РФ
-                                    </p>
-                                    <p>
-                                        <b>Родной город: Серпухов</b><br>
-                                        Место работы: Помошник первого секретаря КПРФ Московской области Васильева Н.В., а также помошник Депутата ГД РФ Кашина В.Н.(Зам.Зюганова Г.А.)
-                                    </p>
-                                    <p>
-                                        <b>Жизненная позиция</b><br>
-                                        Полит. предпочтения: Коммунистические <br>
-                                        Главное в жизни: Совершенствование мира <br>
-                                        Главное в людях: Доброта и честность
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/sl-wrap-->
-                        <!--sl-wrap-->
-                        <div class="sl-wrap">
-                            <div class="photo-wrap">
-                                <img src="./img/photo.jpg" alt="" class="img-about">
-                                <div class="photo-title">
-                                    <img src="./img/icons/title.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="info-wrap">
-                                <div class="info-title-wrap">
-                                    <h2 class="page-title title-light">Обо мне</h2>
-                                </div>
-                                <div class="info-text-wrap">
-                                    <div class="sl-title">Андрей Черепенников</div>
-                                    <p>
-                                        Житель г.о. Серпухов Первый секретарь партии КПРФ г.Протвино. <br>
-                                        День рождения: 26 июня 1968 г. Город: Серпухов, Семейное положение: женат. Место работы: Государственная Дума РФ
-                                    </p>
-                                    <p>
-                                        <b>Родной город: Серпухов</b><br>
-                                        Место работы: Помошник первого секретаря КПРФ Московской области Васильева Н.В., а также помошник Депутата ГД РФ Кашина В.Н.(Зам.Зюганова Г.А.)
-                                    </p>
-                                    <p>
-                                        <b>Жизненная позиция</b><br>
-                                        Полит. предпочтения: Коммунистические <br>
-                                        Главное в жизни: Совершенствование мира <br>
-                                        Главное в людях: Доброта и честность
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/sl-wrap-->
-                        <!--sl-wrap-->
-                        <div class="sl-wrap">
-                            <div class="photo-wrap">
-                                <img src="./img/photo.jpg" alt="" class="img-about">
-                                <div class="photo-title">
-                                    <img src="./img/icons/title.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="info-wrap">
-                                <div class="info-title-wrap">
-                                    <h2 class="page-title title-light">Обо мне</h2>
-                                </div>
-                                <div class="info-text-wrap">
-                                    <div class="sl-title">Андрей Черепенников</div>
-                                    <p>
-                                        Житель г.о. Серпухов Первый секретарь партии КПРФ г.Протвино. <br>
-                                        День рождения: 26 июня 1968 г. Город: Серпухов, Семейное положение: женат. Место работы: Государственная Дума РФ
-                                    </p>
-                                    <p>
-                                        <b>Родной город: Серпухов</b><br>
-                                        Место работы: Помошник первого секретаря КПРФ Московской области Васильева Н.В., а также помошник Депутата ГД РФ Кашина В.Н.(Зам.Зюганова Г.А.)
-                                    </p>
-                                    <p>
-                                        <b>Жизненная позиция</b><br>
-                                        Полит. предпочтения: Коммунистические <br>
-                                        Главное в жизни: Совершенствование мира <br>
-                                        Главное в людях: Доброта и честность
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/sl-wrap-->
-                        <!--sl-wrap-->
-                        <div class="sl-wrap">
-                            <div class="photo-wrap">
-                                <img src="./img/photo.jpg" alt="" class="img-about">
-                                <div class="photo-title">
-                                    <img src="./img/icons/title.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="info-wrap">
-                                <div class="info-title-wrap">
-                                    <h2 class="page-title title-light">Обо мне</h2>
-                                </div>
-                                <div class="info-text-wrap">
-                                    <div class="sl-title">Андрей Черепенников</div>
-                                    <p>
-                                        Житель г.о. Серпухов Первый секретарь партии КПРФ г.Протвино. <br>
-                                        День рождения: 26 июня 1968 г. Город: Серпухов, Семейное положение: женат. Место работы: Государственная Дума РФ
-                                    </p>
-                                    <p>
-                                        <b>Родной город: Серпухов</b><br>
-                                        Место работы: Помошник первого секретаря КПРФ Московской области Васильева Н.В., а также помошник Депутата ГД РФ Кашина В.Н.(Зам.Зюганова Г.А.)
-                                    </p>
-                                    <p>
-                                        <b>Жизненная позиция</b><br>
-                                        Полит. предпочтения: Коммунистические <br>
-                                        Главное в жизни: Совершенствование мира <br>
-                                        Главное в людях: Доброта и честность
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/sl-wrap-->
                     </div>
-                    <div class="slider-actions-box">
-                        <a href="" class="btn-action-ico ico-arrow ico-arrow-prev"></a>
-                        <div class="slider-counter" data-counter="5">
-                            <div class="sl-dot active" data-slide="0">1</div>
-                            <div class="sl-dot" data-slide="1">2</div>
-                            <div class="sl-dot" data-slide="2">3</div>
-                            <div class="sl-dot" data-slide="3">4</div>
-                            <div class="sl-dot" data-slide="4">5</div>
+                    <div class="slider-outer-wrap">
+                        <div class="slider-wrap slider-actions">
+                            <div class="slider">
+                                <!--sl-wrap-->
+                                <div class="sl-wrap">
+                                    <div class="info-wrap">
+                                        <div class="info-title-wrap">
+                                            <h2 class="page-title title-light">Обо мне</h2>
+                                        </div>
+                                        <div class="info-text-wrap">
+                                            <div class="sl-title">Андрей Черепенников</div>
+                                            <p>
+                                                Житель г.о. Серпухов Первый секретарь партии КПРФ г.Протвино. <br>
+                                                День рождения: 26 июня 1968 г. Город: Серпухов, Семейное положение: женат. Место работы: Государственная Дума РФ </p>
+                                            <p>
+                                                <b>Родной город: Серпухов</b><br>
+                                                Место работы: Помошник первого секретаря КПРФ Московской области Васильева Н.В., а также помошник Депутата ГД РФ Кашина В.Н.(Зам.Зюганова Г.А.)
+                                            </p>
+                                            <p>
+                                                <b>Жизненная позиция</b><br>
+                                                Полит. предпочтения: Коммунистические <br>
+                                                Главное в жизни: Совершенствование мира <br>
+                                                Главное в людях: Доброта и честность
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap">
+                                    <div class="info-wrap">
+                                        <div class="info-title-wrap">
+                                            <h2 class="page-title title-light">Обо мне</h2>
+                                        </div>
+                                        <div class="info-text-wrap">
+                                            <div class="sl-title">Андрей Черепенников</div>
+                                            <p>
+                                                Житель г.о. Серпухов Первый секретарь партии КПРФ г.Протвино. <br>
+                                                День рождения: 26 июня 1968 г. Город: Серпухов, Семейное положение: женат. Место работы: Государственная Дума РФ </p>
+                                            <p>
+                                                <b>Родной город: Серпухов</b><br>
+                                                Место работы: Помошник первого секретаря КПРФ Московской области Васильева Н.В., а также помошник Депутата ГД РФ Кашина В.Н.(Зам.Зюганова Г.А.)
+                                            </p>
+                                            <p>
+                                                <b>Жизненная позиция</b><br>
+                                                Полит. предпочтения: Коммунистические <br>
+                                                Главное в жизни: Совершенствование мира <br>
+                                                Главное в людях: Доброта и честность
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap">
+                                    <div class="info-wrap">
+                                        <div class="info-title-wrap">
+                                            <h2 class="page-title title-light">Обо мне</h2>
+                                        </div>
+                                        <div class="info-text-wrap">
+                                            <div class="sl-title">Андрей Черепенников</div>
+                                            <p>
+                                                Житель г.о. Серпухов Первый секретарь партии КПРФ г.Протвино. <br>
+                                                День рождения: 26 июня 1968 г. Город: Серпухов, Семейное положение: женат. Место работы: Государственная Дума РФ </p>
+                                            <p>
+                                                <b>Родной город: Серпухов</b><br>
+                                                Место работы: Помошник первого секретаря КПРФ Московской области Васильева Н.В., а также помошник Депутата ГД РФ Кашина В.Н.(Зам.Зюганова Г.А.)
+                                            </p>
+                                            <p>
+                                                <b>Жизненная позиция</b><br>
+                                                Полит. предпочтения: Коммунистические <br>
+                                                Главное в жизни: Совершенствование мира <br>
+                                                Главное в людях: Доброта и честность
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap">
+                                    <div class="info-wrap">
+                                        <div class="info-title-wrap">
+                                            <h2 class="page-title title-light">Обо мне</h2>
+                                        </div>
+                                        <div class="info-text-wrap">
+                                            <div class="sl-title">Андрей Черепенников</div>
+                                            <p>
+                                                Житель г.о. Серпухов Первый секретарь партии КПРФ г.Протвино. <br>
+                                                День рождения: 26 июня 1968 г. Город: Серпухов, Семейное положение: женат. Место работы: Государственная Дума РФ </p>
+                                            <p>
+                                                <b>Родной город: Серпухов</b><br>
+                                                Место работы: Помошник первого секретаря КПРФ Московской области Васильева Н.В., а также помошник Депутата ГД РФ Кашина В.Н.(Зам.Зюганова Г.А.)
+                                            </p>
+                                            <p>
+                                                <b>Жизненная позиция</b><br>
+                                                Полит. предпочтения: Коммунистические <br>
+                                                Главное в жизни: Совершенствование мира <br>
+                                                Главное в людях: Доброта и честность
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap">
+                                    <div class="info-wrap">
+                                        <div class="info-title-wrap">
+                                            <h2 class="page-title title-light">Обо мне</h2>
+                                        </div>
+                                        <div class="info-text-wrap">
+                                            <div class="sl-title">Андрей Черепенников</div>
+                                            <p>
+                                                Житель г.о. Серпухов Первый секретарь партии КПРФ г.Протвино. <br>
+                                                День рождения: 26 июня 1968 г. Город: Серпухов, Семейное положение: женат. Место работы: Государственная Дума РФ </p>
+                                            <p>
+                                                <b>Родной город: Серпухов</b><br>
+                                                Место работы: Помошник первого секретаря КПРФ Московской области Васильева Н.В., а также помошник Депутата ГД РФ Кашина В.Н.(Зам.Зюганова Г.А.)
+                                            </p>
+                                            <p>
+                                                <b>Жизненная позиция</b><br>
+                                                Полит. предпочтения: Коммунистические <br>
+                                                Главное в жизни: Совершенствование мира <br>
+                                                Главное в людях: Доброта и честность
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                            </div>
+                            <div class="slider-actions-box">
+                                <a href="" class="btn-action-ico ico-arrow ico-arrow-prev"></a>
+                                <div class="slider-counter" data-counter="5">
+                                    <div class="sl-dot active" data-slide="0">1</div>
+                                    <div class="sl-dot" data-slide="1">2</div>
+                                    <div class="sl-dot" data-slide="2">3</div>
+                                    <div class="sl-dot" data-slide="3">4</div>
+                                    <div class="sl-dot" data-slide="4">5</div>
+                                </div>
+                                <a href="" class="btn-action-ico ico-arrow ico-arrow-next"></a>
+                            </div>
                         </div>
-                        <a href="" class="btn-action-ico ico-arrow ico-arrow-next"></a>
                     </div>
                 </div>
             </div>
             <!--/about-box-->
 
+            <!--articles-box-->
+            <div class="js-tab-block" data-tab="tab-blog">
+                <div class="articles-box">
+                    <div class="items-wrap items-row">
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-article">
+                                <div class="article-date-wrap">
+                                    <div class="elm-date">16-02-22</div>
+                                </div>
+                                <div class="article-photo-wrap">
+                                    <a href="" class="elm-photo photo-cover">
+                                        <img src="./img/new.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="article-info-wrap">
+                                    <div class="article-title"><a href="">Предварительные выводы неутешительны: современная методология разработки создаёт.</a></div>
+                                    <div class="article-text text-light"><a href="">Прежде всего, высокое качество позиционных исследований, а также свежий взгляд на привычные вещи - безусловно открывает.</a></div>
+                                </div>
+                                <div class="article-action-wrap">
+                                    <a href="" class="btn button-more">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-article">
+                                <div class="article-date-wrap">
+                                    <div class="elm-date">16-02-22</div>
+                                </div>
+                                <div class="article-photo-wrap">
+                                    <a href="" class="elm-photo photo-cover">
+                                        <img src="./img/new.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="article-info-wrap">
+                                    <div class="article-title"><a href="">Предварительные выводы неутешительны: современная методология разработки создаёт.</a></div>
+                                    <div class="article-text text-light"><a href="">Прежде всего, высокое качество позиционных исследований, а также свежий взгляд на привычные вещи - безусловно открывает.</a></div>
+                                </div>
+                                <div class="article-action-wrap">
+                                    <a href="" class="btn button-more">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-article">
+                                <div class="article-date-wrap">
+                                    <div class="elm-date">16-02-22</div>
+                                </div>
+                                <div class="article-photo-wrap">
+                                    <a href="" class="elm-photo photo-cover">
+                                        <img src="./img/new.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="article-info-wrap">
+                                    <div class="article-title"><a href="">Предварительные выводы неутешительны: современная методология разработки создаёт.</a></div>
+                                    <div class="article-text text-light"><a href="">Прежде всего, высокое качество позиционных исследований, а также свежий взгляд на привычные вещи - безусловно открывает.</a></div>
+                                </div>
+                                <div class="article-action-wrap">
+                                    <a href="" class="btn button-more">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-article">
+                                <div class="article-date-wrap">
+                                    <div class="elm-date">16-02-22</div>
+                                </div>
+                                <div class="article-photo-wrap">
+                                    <a href="" class="elm-photo photo-cover">
+                                        <img src="./img/new.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="article-info-wrap">
+                                    <div class="article-title"><a href="">Предварительные выводы неутешительны: современная методология разработки создаёт.</a></div>
+                                    <div class="article-text text-light"><a href="">Прежде всего, высокое качество позиционных исследований, а также свежий взгляд на привычные вещи - безусловно открывает.</a></div>
+                                </div>
+                                <div class="article-action-wrap">
+                                    <a href="" class="btn button-more">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                    </div>
+                    <div class="more-box">
+                        <a href="" class="btn button-border">Смотреть ещё</a>
+                    </div>
+                </div>
+            </div>
+            <!--/articles-box-->
+
             <!--target-box-->
             <div class="target-box slider-actions">
-                <div class="slider-wrap">
-                    <div class="slider">
-                        <!--sl-wrap-->
-                        <div class="sl-wrap">
-                            <div class="photo-outer-wrap">
-                                <div class="photo-title">МИР <span>/</span> ТРУД <span>/</span> МАЙ</div>
-                                <div class="photo-wrap">
-                                    <img src="./img/ls.png" alt="" class="img-target">
-                                </div>
-                                <div class="photo-subtitle">ЛЕНИН</div>
-                                <div class="photo-subtitle">СТАЛИН</div>
-                            </div>
-                            <div class="info-wrap">
-                                <div class="info-title-wrap">
-                                    <h2 class="page-title title-light">Наши цели</h2>
-                                </div>
-                                <div class="info-text-wrap">
-                                    <p><b>1. Народ — хозяин страны.</b></p>
-                                    <p>Богатства России должны служить народу, а не кучке олигархов. Мы — за национализацию нефтяной и газовой отраслей. Одна только эта мера позволит увеличить доходы казны более чем на 3 триллиона рублей.</p>
-                                    <p>Национализация ключевых банков, электроэнергетики, железных дорог, систем связи, предприятий ВПК позволит создать мощный государственный сектор экономики. Это снизит зависимость России от иностранного капитала. Сегодня доля зарубежных компаний в металлургическом производстве, железнодорожном и энергетическом машиностроении уже превышает 75 процентов. Рост иностранного капитала в экономике сохраняется, несмотря на санкции. По сути это колониальная зависимость.</p>
-                                    <p>Национализация придаст плановый характер развитию страны, расширит её конкурентные возможности в мире. Закон «О стратегическом планировании» по инициативе КПРФ уже принят. Но это только первый шаг. Чтобы экономика работала устойчиво и эффективно, нормой жизни должно стать тактическое и стратегическое планирование. Для этого должен быть создан соответствующий государственный орган.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/sl-wrap-->
-                        <!--sl-wrap-->
-                        <div class="sl-wrap">
-                            <div class="photo-outer-wrap">
-                                <div class="photo-title">МИР <span>/</span> ТРУД <span>/</span> МАЙ</div>
-                                <div class="photo-wrap">
-                                    <img src="./img/ls.png" alt="" class="img-target">
-                                </div>
-                                <div class="photo-subtitle">ЛЕНИН</div>
-                                <div class="photo-subtitle">СТАЛИН</div>
-                            </div>
-                            <div class="info-wrap">
-                                <div class="info-title-wrap">
-                                    <h2 class="page-title title-light">Наши цели</h2>
-                                </div>
-                                <div class="info-text-wrap">
-                                    <p><b>1. Народ — хозяин страны.</b></p>
-                                    <p>Богатства России должны служить народу, а не кучке олигархов. Мы — за национализацию нефтяной и газовой отраслей. Одна только эта мера позволит увеличить доходы казны более чем на 3 триллиона рублей.</p>
-                                    <p>Национализация ключевых банков, электроэнергетики, железных дорог, систем связи, предприятий ВПК позволит создать мощный государственный сектор экономики. Это снизит зависимость России от иностранного капитала. Сегодня доля зарубежных компаний в металлургическом производстве, железнодорожном и энергетическом машиностроении уже превышает 75 процентов. Рост иностранного капитала в экономике сохраняется, несмотря на санкции. По сути это колониальная зависимость.</p>
-                                    <p>Национализация придаст плановый характер развитию страны, расширит её конкурентные возможности в мире. Закон «О стратегическом планировании» по инициативе КПРФ уже принят. Но это только первый шаг. Чтобы экономика работала устойчиво и эффективно, нормой жизни должно стать тактическое и стратегическое планирование. Для этого должен быть создан соответствующий государственный орган.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/sl-wrap-->
-                        <!--sl-wrap-->
-                        <div class="sl-wrap">
-                            <div class="photo-outer-wrap">
-                                <div class="photo-title">МИР <span>/</span> ТРУД <span>/</span> МАЙ</div>
-                                <div class="photo-wrap">
-                                    <img src="./img/ls.png" alt="" class="img-target">
-                                </div>
-                                <div class="photo-subtitle">ЛЕНИН</div>
-                                <div class="photo-subtitle">СТАЛИН</div>
-                            </div>
-                            <div class="info-wrap">
-                                <div class="info-title-wrap">
-                                    <h2 class="page-title title-light">Наши цели</h2>
-                                </div>
-                                <div class="info-text-wrap">
-                                    <p><b>1. Народ — хозяин страны.</b></p>
-                                    <p>Богатства России должны служить народу, а не кучке олигархов. Мы — за национализацию нефтяной и газовой отраслей. Одна только эта мера позволит увеличить доходы казны более чем на 3 триллиона рублей.</p>
-                                    <p>Национализация ключевых банков, электроэнергетики, железных дорог, систем связи, предприятий ВПК позволит создать мощный государственный сектор экономики. Это снизит зависимость России от иностранного капитала. Сегодня доля зарубежных компаний в металлургическом производстве, железнодорожном и энергетическом машиностроении уже превышает 75 процентов. Рост иностранного капитала в экономике сохраняется, несмотря на санкции. По сути это колониальная зависимость.</p>
-                                    <p>Национализация придаст плановый характер развитию страны, расширит её конкурентные возможности в мире. Закон «О стратегическом планировании» по инициативе КПРФ уже принят. Но это только первый шаг. Чтобы экономика работала устойчиво и эффективно, нормой жизни должно стать тактическое и стратегическое планирование. Для этого должен быть создан соответствующий государственный орган.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/sl-wrap-->
-                        <!--sl-wrap-->
-                        <div class="sl-wrap">
-                            <div class="photo-outer-wrap">
-                                <div class="photo-title">МИР <span>/</span> ТРУД <span>/</span> МАЙ</div>
-                                <div class="photo-wrap">
-                                    <img src="./img/ls.png" alt="" class="img-target">
-                                </div>
-                                <div class="photo-subtitle">ЛЕНИН</div>
-                                <div class="photo-subtitle">СТАЛИН</div>
-                            </div>
-                            <div class="info-wrap">
-                                <div class="info-title-wrap">
-                                    <h2 class="page-title title-light">Наши цели</h2>
-                                </div>
-                                <div class="info-text-wrap">
-                                    <p><b>1. Народ — хозяин страны.</b></p>
-                                    <p>Богатства России должны служить народу, а не кучке олигархов. Мы — за национализацию нефтяной и газовой отраслей. Одна только эта мера позволит увеличить доходы казны более чем на 3 триллиона рублей.</p>
-                                    <p>Национализация ключевых банков, электроэнергетики, железных дорог, систем связи, предприятий ВПК позволит создать мощный государственный сектор экономики. Это снизит зависимость России от иностранного капитала. Сегодня доля зарубежных компаний в металлургическом производстве, железнодорожном и энергетическом машиностроении уже превышает 75 процентов. Рост иностранного капитала в экономике сохраняется, несмотря на санкции. По сути это колониальная зависимость.</p>
-                                    <p>Национализация придаст плановый характер развитию страны, расширит её конкурентные возможности в мире. Закон «О стратегическом планировании» по инициативе КПРФ уже принят. Но это только первый шаг. Чтобы экономика работала устойчиво и эффективно, нормой жизни должно стать тактическое и стратегическое планирование. Для этого должен быть создан соответствующий государственный орган.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/sl-wrap-->
-                        <!--sl-wrap-->
-                        <div class="sl-wrap">
-                            <div class="photo-outer-wrap">
-                                <div class="photo-title">МИР <span>/</span> ТРУД <span>/</span> МАЙ</div>
-                                <div class="photo-wrap">
-                                    <img src="./img/ls.png" alt="" class="img-target">
-                                </div>
-                                <div class="photo-subtitle">ЛЕНИН</div>
-                                <div class="photo-subtitle">СТАЛИН</div>
-                            </div>
-                            <div class="info-wrap">
-                                <div class="info-title-wrap">
-                                    <h2 class="page-title title-light">Наши цели</h2>
-                                </div>
-                                <div class="info-text-wrap">
-                                    <p><b>1. Народ — хозяин страны.</b></p>
-                                    <p>Богатства России должны служить народу, а не кучке олигархов. Мы — за национализацию нефтяной и газовой отраслей. Одна только эта мера позволит увеличить доходы казны более чем на 3 триллиона рублей.</p>
-                                    <p>Национализация ключевых банков, электроэнергетики, железных дорог, систем связи, предприятий ВПК позволит создать мощный государственный сектор экономики. Это снизит зависимость России от иностранного капитала. Сегодня доля зарубежных компаний в металлургическом производстве, железнодорожном и энергетическом машиностроении уже превышает 75 процентов. Рост иностранного капитала в экономике сохраняется, несмотря на санкции. По сути это колониальная зависимость.</p>
-                                    <p>Национализация придаст плановый характер развитию страны, расширит её конкурентные возможности в мире. Закон «О стратегическом планировании» по инициативе КПРФ уже принят. Но это только первый шаг. Чтобы экономика работала устойчиво и эффективно, нормой жизни должно стать тактическое и стратегическое планирование. Для этого должен быть создан соответствующий государственный орган.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/sl-wrap-->
+                <div class="photo-outer-wrap">
+                    <div class="photo-title">МИР <span>/</span> ТРУД <span>/</span> МАЙ</div>
+                    <div class="photo-wrap">
+                        <img src="./img/ls.png" alt="" class="img-target">
                     </div>
-                    <div class="slider-actions-box">
-                        <a href="" class="btn-action-ico ico-arrow ico-arrow-prev"></a>
-                        <div class="slider-counter" data-counter="5">
-                            <div class="sl-dot active" data-slide="0">1</div>
-                            <div class="sl-dot" data-slide="1">2</div>
-                            <div class="sl-dot" data-slide="2">3</div>
-                            <div class="sl-dot" data-slide="3">4</div>
-                            <div class="sl-dot" data-slide="4">5</div>
+                    <div class="photo-subtitle">ЛЕНИН</div>
+                    <div class="photo-subtitle">СТАЛИН</div>
+                </div>
+                <div class="slider-outer-wrap">
+                    <div class="slider-wrap">
+                        <div class="slider">
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <div class="info-wrap">
+                                    <div class="info-title-wrap">
+                                        <h2 class="page-title title-light">Наши цели</h2>
+                                    </div>
+                                    <div class="info-text-wrap">
+                                        <p><b>1. Народ — хозяин страны.</b></p>
+                                        <p>Богатства России должны служить народу, а не кучке олигархов. Мы — за национализацию нефтяной и газовой отраслей. Одна только эта мера позволит увеличить доходы казны более чем на 3 триллиона рублей.</p>
+                                        <p>Национализация ключевых банков, электроэнергетики, железных дорог, систем связи, предприятий ВПК позволит создать мощный государственный сектор экономики. Это снизит зависимость России от иностранного капитала. Сегодня доля зарубежных компаний в металлургическом производстве, железнодорожном и энергетическом машиностроении уже превышает 75 процентов. Рост иностранного капитала в экономике сохраняется, несмотря на санкции. По сути это колониальная зависимость.</p>
+                                        <p>Национализация придаст плановый характер развитию страны, расширит её конкурентные возможности в мире. Закон «О стратегическом планировании» по инициативе КПРФ уже принят. Но это только первый шаг. Чтобы экономика работала устойчиво и эффективно, нормой жизни должно стать тактическое и стратегическое планирование. Для этого должен быть создан соответствующий государственный орган.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <div class="info-wrap">
+                                    <div class="info-title-wrap">
+                                        <h2 class="page-title title-light">Наши цели</h2>
+                                    </div>
+                                    <div class="info-text-wrap">
+                                        <p><b>1. Народ — хозяин страны.</b></p>
+                                        <p>Богатства России должны служить народу, а не кучке олигархов. Мы — за национализацию нефтяной и газовой отраслей. Одна только эта мера позволит увеличить доходы казны более чем на 3 триллиона рублей.</p>
+                                        <p>Национализация ключевых банков, электроэнергетики, железных дорог, систем связи, предприятий ВПК позволит создать мощный государственный сектор экономики. Это снизит зависимость России от иностранного капитала. Сегодня доля зарубежных компаний в металлургическом производстве, железнодорожном и энергетическом машиностроении уже превышает 75 процентов. Рост иностранного капитала в экономике сохраняется, несмотря на санкции. По сути это колониальная зависимость.</p>
+                                        <p>Национализация придаст плановый характер развитию страны, расширит её конкурентные возможности в мире. Закон «О стратегическом планировании» по инициативе КПРФ уже принят. Но это только первый шаг. Чтобы экономика работала устойчиво и эффективно, нормой жизни должно стать тактическое и стратегическое планирование. Для этого должен быть создан соответствующий государственный орган.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <div class="info-wrap">
+                                    <div class="info-title-wrap">
+                                        <h2 class="page-title title-light">Наши цели</h2>
+                                    </div>
+                                    <div class="info-text-wrap">
+                                        <p><b>1. Народ — хозяин страны.</b></p>
+                                        <p>Богатства России должны служить народу, а не кучке олигархов. Мы — за национализацию нефтяной и газовой отраслей. Одна только эта мера позволит увеличить доходы казны более чем на 3 триллиона рублей.</p>
+                                        <p>Национализация ключевых банков, электроэнергетики, железных дорог, систем связи, предприятий ВПК позволит создать мощный государственный сектор экономики. Это снизит зависимость России от иностранного капитала. Сегодня доля зарубежных компаний в металлургическом производстве, железнодорожном и энергетическом машиностроении уже превышает 75 процентов. Рост иностранного капитала в экономике сохраняется, несмотря на санкции. По сути это колониальная зависимость.</p>
+                                        <p>Национализация придаст плановый характер развитию страны, расширит её конкурентные возможности в мире. Закон «О стратегическом планировании» по инициативе КПРФ уже принят. Но это только первый шаг. Чтобы экономика работала устойчиво и эффективно, нормой жизни должно стать тактическое и стратегическое планирование. Для этого должен быть создан соответствующий государственный орган.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <div class="info-wrap">
+                                    <div class="info-title-wrap">
+                                        <h2 class="page-title title-light">Наши цели</h2>
+                                    </div>
+                                    <div class="info-text-wrap">
+                                        <p><b>1. Народ — хозяин страны.</b></p>
+                                        <p>Богатства России должны служить народу, а не кучке олигархов. Мы — за национализацию нефтяной и газовой отраслей. Одна только эта мера позволит увеличить доходы казны более чем на 3 триллиона рублей.</p>
+                                        <p>Национализация ключевых банков, электроэнергетики, железных дорог, систем связи, предприятий ВПК позволит создать мощный государственный сектор экономики. Это снизит зависимость России от иностранного капитала. Сегодня доля зарубежных компаний в металлургическом производстве, железнодорожном и энергетическом машиностроении уже превышает 75 процентов. Рост иностранного капитала в экономике сохраняется, несмотря на санкции. По сути это колониальная зависимость.</p>
+                                        <p>Национализация придаст плановый характер развитию страны, расширит её конкурентные возможности в мире. Закон «О стратегическом планировании» по инициативе КПРФ уже принят. Но это только первый шаг. Чтобы экономика работала устойчиво и эффективно, нормой жизни должно стать тактическое и стратегическое планирование. Для этого должен быть создан соответствующий государственный орган.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <div class="info-wrap">
+                                    <div class="info-title-wrap">
+                                        <h2 class="page-title title-light">Наши цели</h2>
+                                    </div>
+                                    <div class="info-text-wrap">
+                                        <p><b>1. Народ — хозяин страны.</b></p>
+                                        <p>Богатства России должны служить народу, а не кучке олигархов. Мы — за национализацию нефтяной и газовой отраслей. Одна только эта мера позволит увеличить доходы казны более чем на 3 триллиона рублей.</p>
+                                        <p>Национализация ключевых банков, электроэнергетики, железных дорог, систем связи, предприятий ВПК позволит создать мощный государственный сектор экономики. Это снизит зависимость России от иностранного капитала. Сегодня доля зарубежных компаний в металлургическом производстве, железнодорожном и энергетическом машиностроении уже превышает 75 процентов. Рост иностранного капитала в экономике сохраняется, несмотря на санкции. По сути это колониальная зависимость.</p>
+                                        <p>Национализация придаст плановый характер развитию страны, расширит её конкурентные возможности в мире. Закон «О стратегическом планировании» по инициативе КПРФ уже принят. Но это только первый шаг. Чтобы экономика работала устойчиво и эффективно, нормой жизни должно стать тактическое и стратегическое планирование. Для этого должен быть создан соответствующий государственный орган.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/sl-wrap-->
                         </div>
-                        <a href="" class="btn-action-ico ico-arrow ico-arrow-next"></a>
+                        <div class="slider-actions-box">
+                            <a href="" class="btn-action-ico ico-arrow ico-arrow-prev"></a>
+                            <div class="slider-counter" data-counter="5">
+                                <div class="sl-dot active" data-slide="0">1</div>
+                                <div class="sl-dot" data-slide="1">2</div>
+                                <div class="sl-dot" data-slide="2">3</div>
+                                <div class="sl-dot" data-slide="3">4</div>
+                                <div class="sl-dot" data-slide="4">5</div>
+                            </div>
+                            <a href="" class="btn-action-ico ico-arrow ico-arrow-next"></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1315,6 +1358,103 @@
             </div>
         </footer>
         <!-- /footer -->
+
+        <div id="popup-message" class="popup-box">
+            <form action="/" class="frm-popup">
+                <div class="frm-title">Оставить обращение</div>
+                <div class="frm-row">
+                    <div class="frm-field">
+                        <input type="text" class="form-input" placeholder="Имя">
+                    </div>
+                </div>
+                <div class="frm-row">
+                    <div class="frm-field">
+                        <input type="email" class="form-input" placeholder="Email">
+                    </div>
+                </div>
+                <div class="frm-row">
+                    <div class="frm-field">
+                        <div class="frm-field-file js-field-file">
+                            <input type="file">
+                            <a href="" class="btn button-file js-file-button" data-title="Прикрепить файл">Прикрепить файл</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="frm-row">
+                    <div class="frm-field">
+                        <textarea placeholder="Вопрос" class="form-input"></textarea>
+                    </div>
+                </div>
+                <div class="frm-row-submit">
+                    <button type="submit" class="btn">Отправить</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="popup-point01" class="popup-box">
+            <div class="popup-text-box">
+                <div class="popup-title">Заголовок 01</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit?</p>
+                <p>dignissimos hic in iusto minima nesciunt quas quisquam! Aliquam, commodi consectetur consequatur cupiditate eligendi eos expedita fugiat harum incidunt ipsam, nisi non officia officiis perferendis porro quam quibusdam tempore vero voluptatem!</p>
+            </div>
+        </div>
+        <div id="popup-point02" class="popup-box">
+            <div class="popup-text-box">
+                <div class="popup-title">Заголовок 02</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit?</p>
+                <p>dignissimos hic in iusto minima nesciunt quas quisquam! Aliquam, commodi consectetur consequatur cupiditate eligendi eos expedita fugiat harum incidunt ipsam, nisi non officia officiis perferendis porro quam quibusdam tempore vero voluptatem!</p>
+            </div>
+        </div>
+        <div id="popup-point03" class="popup-box">
+            <div class="popup-text-box">
+                <div class="popup-title">Заголовок 03</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit?</p>
+                <p>dignissimos hic in iusto minima nesciunt quas quisquam! Aliquam, commodi consectetur consequatur cupiditate eligendi eos expedita fugiat harum incidunt ipsam, nisi non officia officiis perferendis porro quam quibusdam tempore vero voluptatem!</p>
+            </div>
+        </div>
+        <div id="popup-point04" class="popup-box">
+            <div class="popup-text-box">
+                <div class="popup-title">Заголовок 04</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit?</p>
+                <p>dignissimos hic in iusto minima nesciunt quas quisquam! Aliquam, commodi consectetur consequatur cupiditate eligendi eos expedita fugiat harum incidunt ipsam, nisi non officia officiis perferendis porro quam quibusdam tempore vero voluptatem!</p>
+            </div>
+        </div>
+        <div id="popup-point05" class="popup-box">
+            <div class="popup-text-box">
+                <div class="popup-title">Заголовок 05</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit?</p>
+                <p>dignissimos hic in iusto minima nesciunt quas quisquam! Aliquam, commodi consectetur consequatur cupiditate eligendi eos expedita fugiat harum incidunt ipsam, nisi non officia officiis perferendis porro quam quibusdam tempore vero voluptatem!</p>
+            </div>
+        </div>
+        <div id="popup-point06" class="popup-box">
+            <div class="popup-text-box">
+                <div class="popup-title">Заголовок 06</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit?</p>
+                <p>dignissimos hic in iusto minima nesciunt quas quisquam! Aliquam, commodi consectetur consequatur cupiditate eligendi eos expedita fugiat harum incidunt ipsam, nisi non officia officiis perferendis porro quam quibusdam tempore vero voluptatem!</p>
+            </div>
+        </div>
+        <div id="popup-point07" class="popup-box">
+            <div class="popup-text-box">
+                <div class="popup-title">Заголовок 07</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit?</p>
+                <p>dignissimos hic in iusto minima nesciunt quas quisquam! Aliquam, commodi consectetur consequatur cupiditate eligendi eos expedita fugiat harum incidunt ipsam, nisi non officia officiis perferendis porro quam quibusdam tempore vero voluptatem!</p>
+            </div>
+        </div>
+        <div id="popup-point08" class="popup-box">
+            <div class="popup-text-box">
+                <div class="popup-title">Заголовок 08</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit?</p>
+                <p>dignissimos hic in iusto minima nesciunt quas quisquam! Aliquam, commodi consectetur consequatur cupiditate eligendi eos expedita fugiat harum incidunt ipsam, nisi non officia officiis perferendis porro quam quibusdam tempore vero voluptatem!</p>
+            </div>
+        </div>
+        <div id="popup-point09" class="popup-box">
+            <div class="popup-text-box">
+                <div class="popup-title">Заголовок 09</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit?</p>
+                <p>dignissimos hic in iusto minima nesciunt quas quisquam! Aliquam, commodi consectetur consequatur cupiditate eligendi eos expedita fugiat harum incidunt ipsam, nisi non officia officiis perferendis porro quam quibusdam tempore vero voluptatem!</p>
+            </div>
+        </div>
 
     </div>
     <!-- /wrap -->
