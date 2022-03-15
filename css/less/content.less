@@ -1,6 +1,15 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.comments-box {
+    margin-bottom: 90px;
+    .item-wrap {
+        padding-top: 20px;
+        .item-wrap {
+            padding-left: 30px;
+        }
+    }
+}
 .popup-box {
     display: none;
     &.fancybox-content {
@@ -873,7 +882,7 @@
     .target-box {
         position: relative;
         .photo-outer-wrap {
-            position: absolute;
+            /*position: absolute;
             top: 115px;
             left: -10px;
             right: -10px;
@@ -881,12 +890,15 @@
             overflow: hidden;
             .photo-wrap {
                 width: 320px;
-            }
+            }*/
             //order: 2;
         }
         .info-wrap {
             //display: contents;
             //order: 3;
+        }
+        .title-inner-wrap {
+            display: none;
         }
         .info-title-wrap {
             //order: 1;
@@ -899,28 +911,31 @@
         }
     }
     .about-box {
+        position: relative;
+        .slider-wrap {
+            position: static;
+        }
         .photo-wrap {
             //order: 2;
             //max-width: 600px;
-            max-width: 340px;
+            max-width: 600px;
             margin: 0 auto;
         }
         .info-wrap {
             //display: contents;
             //order: 3;
         }
+        .title-inner-wrap {
+            display: none;
+        }
         .info-title-wrap {
             //order: 1;
+            display: none;
         }
         .info-text-wrap {
             //order: 3;
         }
         .photo-outer-wrap {
-            position: absolute;
-            top: 85px;
-            left: 0;
-            right: 0;   
-            pointer-events: none;
         }
         .info-title-wrap {
             &:after {
@@ -977,6 +992,12 @@
         margin-bottom: 90px;
         position: relative;
         display: flex;
+        .title-outer-wrap {
+            display: none;
+        }
+        .title-inner-wrap {
+            display: block;
+        }
         .slider-wrap {
             //margin: 0 -100px;
             margin: 0;
@@ -1086,6 +1107,12 @@
         .slider-outer-wrap {
             width: 50%;
             overflow: hidden;
+        }
+        .title-outer-wrap {
+            display: none;
+        }
+        .title-inner-wrap {
+            display: block;
         }
         .slider-wrap {
             //margin: 0 -100px;
