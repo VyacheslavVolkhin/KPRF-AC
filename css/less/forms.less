@@ -72,6 +72,19 @@ input[type="submit"] {
         border-color: #DF1F2B+#222;
         color: #fff;
     }
+    &.active {
+        border-color: #fff;
+        background: #fff;
+        color: #282828;
+        &:hover {
+            background: #fafafa;
+            border-color: #fafafa;
+            color: var(--clr-base);
+        }
+        .ico-menu {
+            filter: none;
+        }
+    }
     &.fancybox-button {
         min-width: 0;
     }
@@ -126,6 +139,9 @@ input[type="submit"] {
                 color: #fff;
             }
         }
+    }
+    .ico-menu {
+        filter: brightness(0) invert(1);
     }
 }
 .btn-action-ico {
@@ -255,8 +271,12 @@ input[type="submit"] {
     &.button-soc {
         width: 30px;
         height: 30px;
+        filter: brightness(0) grayscale(1);
         img, svg {
             height: 20px;
+        }
+        &:hover {
+            filter: none;
         }
     }
 }
@@ -404,6 +424,9 @@ input[type="submit"] {
             background: #fff;
         }
     }
+}
+body.compensate-for-scrollbar {
+    overflow: visible !important;
 }
 @media (min-width: 1024px) {
     .btn,

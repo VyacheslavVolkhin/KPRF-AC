@@ -495,8 +495,6 @@ body {
   }
   .main-menu-wrap .button-soc {
     margin: 0 20px 0 0;
-    -webkit-filter: brightness(0) grayscale(1);
-            filter: brightness(0) grayscale(1);
   }
 }
 @media (min-width: 768px) {
@@ -742,6 +740,10 @@ body {
   }
   .main-menu-wrap .btn-action-ico.ico-menu {
     display: none;
+  }
+  .main-menu-wrap .btn-action-ico.button-soc {
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
   }
 }
 @media (min-width: 1024px) and (max-width: 1399px) {
@@ -2352,8 +2354,6 @@ body {
 }
 .contacts-box .button-soc {
   margin: 0 20px 10px 0;
-  -webkit-filter: brightness(0) grayscale(1);
-          filter: brightness(0) grayscale(1);
 }
 .map-box {
   display: block;
@@ -3486,6 +3486,26 @@ input[type="submit"]:hover {
   border-color: #ff414d;
   color: #fff;
 }
+.btn.active,
+button.active,
+input[type="submit"].active {
+  border-color: #fff;
+  background: #fff;
+  color: #282828;
+}
+.btn.active:hover,
+button.active:hover,
+input[type="submit"].active:hover {
+  background: #fafafa;
+  border-color: #fafafa;
+  color: var(--clr-base);
+}
+.btn.active .ico-menu,
+button.active .ico-menu,
+input[type="submit"].active .ico-menu {
+  -webkit-filter: none;
+          filter: none;
+}
 .btn.fancybox-button,
 button.fancybox-button,
 input[type="submit"].fancybox-button {
@@ -3562,6 +3582,12 @@ button.button-border.button-border-att:hover,
 input[type="submit"].button-border.button-border-att:hover {
   background: var(--clr-att);
   color: #fff;
+}
+.btn .ico-menu,
+button .ico-menu,
+input[type="submit"] .ico-menu {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 .btn-action-ico {
   min-width: 0;
@@ -3711,10 +3737,16 @@ input[type="submit"].button-border.button-border-att:hover {
 .btn-action-ico.button-soc {
   width: 30px;
   height: 30px;
+  -webkit-filter: brightness(0) grayscale(1);
+          filter: brightness(0) grayscale(1);
 }
 .btn-action-ico.button-soc img,
 .btn-action-ico.button-soc svg {
   height: 20px;
+}
+.btn-action-ico.button-soc:hover {
+  -webkit-filter: none;
+          filter: none;
 }
 .frm-row,
 .frm-field,
@@ -3869,6 +3901,9 @@ input[type="submit"].button-border.button-border-att:hover {
 }
 .slick-dots .slick-active button {
   background: #fff;
+}
+body.compensate-for-scrollbar {
+  overflow: visible !important;
 }
 @media (min-width: 1024px) {
   .btn.button-more,
